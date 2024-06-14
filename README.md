@@ -3,13 +3,13 @@
 ## 《Panda&Bamboo》
 
 #### 效果展示  
-![图片](\ShowImages\login1.png "login1")
-![图片](\ShowImages\login2.png "login2")
-![图片](\ShowImages\register.png "regiter")
-![图片](\ShowImages\home1.png "home1")
-![图片](\ShowImages\home2.png "home2")
-![图片](\ShowImages\depot.png "depot")
-![图片](\ShowImages\canvas.png "canvas")
+![图片](ShowImages/login1.png "login1")
+![图片](ShowImages/login2.png "login2")
+![图片](ShowImages/register.png "regiter")
+![图片](ShowImages/home1.png "home1")
+![图片](ShowImages/home2.png "home2")
+![图片](ShowImages/depot.png "depot")
+![图片](ShowImages/canvas.png "canvas")
 
 #### 使用前提  
 ###### mysql数据库有一个ajaxdemo的database  
