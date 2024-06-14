@@ -1,0 +1,206 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family 规定元素的字体系列 */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body{
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+nav{
+    margin-right: 500px;
+}
+
+nav a{
+    /*更改字体为幼圆*/
+    font-family:YouYuan;
+    /*去除下划线*/
+    padding: 5px;
+    text-decoration: none;
+    color: #7f9c38;
+    border-radius: 15px;
+    margin: 0 10px;
+    font-weight: 400;
+}
+
+nav a:hover,
+nav a.active{
+    background-color: #7f9c38;
+    color: #fff;
+}
+
+.logo{
+    font-size: 25px;
+    color:#7f9c38;
+    pointer-events: none;
+}
+
+.parallax{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parallax img{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    /* max-width: 100%; */
+    pointer-events: none;
+}
+
+#text{
+    position: absolute;
+    font-size: 70px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.sec{
+    position: relative;
+    background: #3d4f2e;
+    margin-top: 60px;
+    padding: 100px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.sec h2{
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p{
+    font-size:16px;
+    color: #fff;
+    font-weight: 100;
+}
+
+/* 聊天框的样式 */
+.sec2{
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid #9f9f9f;
+}
+
+#chat{
+    background-color: #efefef;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: auto;
+    height: 400px;
+    border-radius: 15px;
+}
+#chat-box1{
+    display: flex;
+}
+
+#chat-box2{
+    display: flex;
+}
+
+#chat-box1>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+#talk{
+    width: auto;
+    height: 100px;
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 100px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #7f9c38;
+
+    /*更改字体为幼圆*/
+    font-family:YouYuan;
+    font-size: 20px;
+    color: #fff;
+    /*增加滚动条*/
+    overflow-y: auto;
+}
+
+#chat-box2{
+    border-top: 1px solid #d2d2d2;
+    margin-top: 50px;
+    padding: 50px;
+    display: flex;
+}
+
+#input-talk{
+    /* width: 800px; */
+    height: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /*更改字体为幼圆*/
+    font-family:YouYuan;
+    font-size: 20px;
+
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+#talk-btn{
+    background-color: #7f9c38;
+    width: 80px;
+    height: 40px;
+    margin: 50px;
+    border: none;
+    border-radius: 15px;
+    /*更改字体为幼圆*/
+    font-family:YouYuan;
+    font-size: 20px;
+    color: #fff;
+}
+
+#talk-btn:active{
+    background-color: rgb(101, 121, 76);
+}
+
+input::placeholder{
+    color: #b6b6b6;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 1300px) {
+    #input-talk {
+      width: 400px;
+    }
+  }
+
+  @media screen and (min-width: 1301px) {
+    #input-talk {
+      width: 800px;
+    }
+  }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Panda & Bamboo</h2>
+        <nav>
+            <a href="#" class="active">我的首页</a>
+            <a id="depot" href="#">庄园仓库</a>
+            <a id="farm" href="#">参观庄园</a>
+            <a id="logout" href="#">退出登录</a>
+        </nav>
+        
+    </header>
+
+    <section class="parallax">
+        <img src="./images/hill.png" id="hill">
+        <img src="./images/lefthouse.png" id="lefthouse">
+        <img src="./images/righthouse.png" id="righthouse">
+        <img src="./images/twogirls.png" id="twogirls">
+        <h2 id="text"> Panda & Bamboo</h2>
+        <img src="./images/foreground.png" id="foreground">
+        <img src="./images/topleaf.png" id="topleaf">
+    </section>
+
+    <section class="sec">
+        <h2>About us</h2>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这是一个富有农家乐趣味的世界。农家乐就是种田、养殖、采集集合成一体的趣味休闲活动，在这里，竹竹和胖哒只是两个普通的种田小女孩。</p>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在本网站中，你可以看到首页、庄园仓库、参观庄园三个板块。
+            首页下方有一个伪聊天窗口，你可以在窗口里和竹竹聊天交流，试试发送包含“哈哈”“歌”字的句子吧，或者你可以摸索其他词汇。
+            由于回答内容都是提前设置好的，竹竹看起来不太聪明的样子，那确实没什么办法。
+            庄园仓库则是记录了竹竹和胖哒的农家乐小收获，你可以往里面添加物品，物品名称、存储数量和获取途径都要写清楚哦。如果填写信息有误，还可以进行修改和删除。ps:不要输入中文哦。
+            最后你可以参观一下我们的庄园，和两个可爱的小女孩一起坐矿车出发吧。</p>
+        </br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于两个原创的小女孩。棕色头发绿色裙子的是竹竹，名字叫“斑比”（bambi音译），生性活泼，富有责任心。黑蓝色色调的是胖哒，名字叫“雀纱”（treasure音译），原型是大熊猫，外冷内热，有点怕生，而且很容易生病。
+            由于俩人的形象设计源自于自然界的动植物，所以很契合农家乐主题，特别小清新。
+        </p>
+        <div class="sec2">
+            <div id="chat">
+                <div id="chat-box1">
+                    <img id="portrait" src="./images/portrait.png">
+                    <div type="text" id="talk">快来和我聊天吧！</div>
+                </div>
+                <div id="chat-box2">
+                    <div id="chat-box3"><input type="textarea" id="input-talk" placeholder="在这里输入文字噢"></div>
+                    <div id="chat-box4"><button id="talk-btn">发送</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/talk.js"></script>
+    <script>
+        window.addEventListener('scroll',function(){
+            var value = window.scrollY;
+            // console.log(value);
+            $('#text').css('marginTop',value*2.5+'px');
+            $('#topleaf').css('top',value*-1.5+'px');
+            $('#topleaf').css('left',value*1.5+'px');
+            $('#righthouse').css('left',value*1.5+'px');
+            $('#lefthouse').css('left',value*-1.5+'px');
+            $('#hill').css('top',value*1+'px');
+        })
+
+        $(function(){
+            //进入庄园仓库
+            $('#depot').click(function(){
+                window.location.href='/depot.html';
+            })
+            //参观庄园
+            $('#farm').click(function(){
+                window.location.href='/farm.html';
+            })
+            //退出登录
+            $('#logout').click(function(){
+                window.location.href='/login.html';
+            })
+        })
+    </script>
+</body>
+</html>

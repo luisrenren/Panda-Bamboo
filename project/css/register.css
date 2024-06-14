@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    color: #9b9b9b;
+}
+body{
+    background-color: #383c42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* .login-box,
+form{
+    position: relative;
+} */
+
+#back{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+    color: rgb(97, 124, 143);
+}
+
+#back:active{
+    color: rgb(65, 84, 98);
+}
+
+.register-box{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(97, 124, 143);
+    border-radius: 15px;
+}
+
+form{
+    width: 450px;
+    height: 520px;
+    background-color: #fff;
+    box-shadow: 0px 1px 20px rgb(157, 157, 157);
+    border-radius: 0px 15px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic img{
+    width: 368px;
+    height: 520px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+h2,.btn-div{
+    display: flex;
+    justify-content: center;
+    color: #535353;
+    padding-top: 50px;
+    margin-bottom: 22px;
+}
+
+.register>div{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 200px;
+    height: 40px;
+    border-radius: 18px;
+    background-color: #eeeeee;
+    border:none;
+    font-size: 16px;
+}
+
+input::placeholder{
+    color: #b6b6b6;
+}
+
+#register-btn{
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 20px;
+    margin-top: 5px;
+    border:none;
+    color: #fff;
+    background-color: rgb(97, 124, 143);
+}
+
+#register-btn:active{
+    background-color: rgb(65, 84, 98);
+}

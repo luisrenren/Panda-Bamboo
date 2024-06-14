@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery-1.12.4.js"></script>
+</head>
+<body>
+    <div class="login-box">
+        <div class="pic">
+            <img src="./images/login1.png" id="login1" alt="">
+        </div>
+        <form action="">
+            <div class="login">
+                <h2>Hello! Nice to meet you~</h2>
+                <div><input type="text" id="username" placeholder="请输入用户名"></div>
+                <div><input type="password" id="password" placeholder="请输入密码"></div>
+                <a id="register">还没有账号？点击注册</a>
+                <div class="btn-div"><button type="submit" id="login-btn">登录</button></div>
+            </div>
+        </form>
+    </div>
+</body>
+
+<script>
+    $(function(){
+        //输入密码时更换图片
+        $('#password').focus(function(){
+        $('#login1').attr('src','./images/login2.png');
+        })
+        $('#password').blur(function(){
+        $('#login1').attr('src','./images/login1.png');
+        })
+
+        //登录
+        $('#login-btn').click(function(){
+            if($('#username').val()==''){
+                alert('请输入用户名！');
+            }else if($('#password').val()==''){
+                alert('请输入密码！');
+            }else{
+                //获取用户输入的账号密码
+                var userdata = {username:$('#username').val(),
+                                password:$('#password').val()}
+                //post传递
+                $.post('/login',userdata,function(data){
+                    if(data.status==0){
+                        alert(data.message);
+                        //跳转页面
+                        window.location.href='/home.html';
+                    }else{
+                        alert(data.message);
+                    }
+                },'json')
+            }
+        })
+
+        //点击跳转注册页面
+        $('#register').click(function(){
+            window.location.href='/register.html';
+        })
+
+    })
+</script>
+
+
+</html>
