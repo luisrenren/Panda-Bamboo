@@ -5,9 +5,6 @@
 ###### 主页呈现一个下滑动态样式  
 ![图片](ShowImages/home3.gif "canvas")  
 
-#### 视频展示  
-<video src="ShowImages/演示视频.mp4" controls="controls" width="500" height="300"></video>
-
 ![图片](ShowImages/login1.png "login1")
 ![图片](ShowImages/login2.png "login2")
 ![图片](ShowImages/register.png "regiter")
@@ -30,4 +27,4 @@
 
 #### 备注  
 ###### 农家乐风格的主页，美术原画是自己负责画的。
-###### 技术方面有css、canvas、node、mysql……
+###### 技术方面有css、jquery、canvas、node、mysql……
