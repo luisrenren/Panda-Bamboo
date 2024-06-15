@@ -2,14 +2,23 @@
 
 ## 《Panda&Bamboo》
 
-#### 效果展示  
-![图片](\ShowImages\login1.png "login1")
-![图片](\ShowImages\login2.png "login2")
-![图片](\ShowImages\register.png "regiter")
-![图片](\ShowImages\home1.png "home1")
-![图片](\ShowImages\home2.png "home2")
-![图片](\ShowImages\depot.png "depot")
-![图片](\ShowImages\canvas.png "canvas")
+###### 主页呈现一个下滑动态样式  
+![图片](ShowImages/home3.gif "canvas")  
+
+#### 视频展示  
+<video src="ShowImages/演示视频.mp4" controls="controls" width="500" height="300"></video>
+<video src="ShowImages/演示视频.mp4" autoplay="true" controls="controls" width="500" height="300">
+</video>
+
+#### 静态展示  
+
+![图片](ShowImages/login1.png "login1")
+![图片](ShowImages/login2.png "login2")
+![图片](ShowImages/register.png "regiter")
+![图片](ShowImages/home1.png "home1")
+![图片](ShowImages/home2.png "home2")
+![图片](ShowImages/depot.png "depot")
+![图片](ShowImages/canvas.png "canvas")
 
 #### 使用前提  
 ###### mysql数据库有一个ajaxdemo的database  
@@ -26,4 +35,3 @@
 #### 备注  
 ###### 农家乐风格的主页，美术原画是自己负责画的。
 ###### 技术方面有css、canvas、node、mysql……
-###### 主页呈现一个
