@@ -7,10 +7,6 @@
 
 #### 视频展示  
 <video src="ShowImages/演示视频.mp4" controls="controls" width="500" height="300"></video>
-<video src="ShowImages/演示视频.mp4" autoplay="true" controls="controls" width="500" height="300">
-</video>
-
-#### 静态展示  
 
 ![图片](ShowImages/login1.png "login1")
 ![图片](ShowImages/login2.png "login2")
