@@ -5,8 +5,10 @@
 ###### 主页呈现一个下滑动态样式  
 ![图片](ShowImages/home3.gif "canvas")  
 
-#### 视频展示  
-<video src="ShowImages/演示视频.mp4" controls="controls" width="500" height="300"></video>
+#### 视频展示
+###### 详情见/myproject目录下的 演示视频.mp4
+
+#### 静态展示 
 
 ![图片](ShowImages/login1.png "login1")
 ![图片](ShowImages/login2.png "login2")
